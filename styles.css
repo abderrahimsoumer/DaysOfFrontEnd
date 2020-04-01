@@ -86,3 +86,20 @@ input{
 }
 
 
+@media(min-width:700px){
+    .container{
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .introduction{ 
+        text-align: left;
+        flex:1;
+        padding-right: 140px;
+    }
+    .signup{
+        flex:1;
+    }
+}
