@@ -7,55 +7,59 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Social media dashboard with theme switcher</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/styles.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <input type="checkbox" name="Dark Mode" id="switcher">
   <main id="container">
-    <div class="header">
-      <div class="header__left">
-        <h1>Social Media Dashboard</h1>
-        <span>Total Followers: 23,004</span>
-      </div>
-      <div class="header__right">
-        <label for="#switcher">Dark Mode</label>
-        <input type="radio" name="Dark Mode" id="Dark Mode">
+    <div class="bg-top">
+      <div class="header">
+        <div class="header__left">
+          <h1>Social Media Dashboard</h1>
+          <span>Total Followers: 23,004</span>
+        </div>
+        <div class="header__right">
+          <label for="switcher">Dark Mode <span class="checkbox"></span></label>
+          
+        </div>
       </div>
     </div>
     <div class="content">
       <section>
         <div class="statistics">
-          <div class="platform platform-fb">
+          <div class="platform platform--fb">
             <div class="platform__app">
-                <i class="platform__icon"></i><span class="platform__name">@nathanf</span>
+                <img class="platform__icon" src="./images/icon-facebook.svg"><span class="platform__name">@nathanf</span>
             </div>
-            <div class="platform__totlalfollowers"><span class="number">1987</span> Followers</div>
-            <div class="platform__todayfollowers">12 Today</div>
+            <div class="platform__totlalfollowers"><div class="number">1987</div><div class="text-followers">Followers</div></div>
+            <div class="platform__todayfollowers text-up"><img class="up" src="./images/icon-up.svg">12 Today</div>
           </div>
-          <div class="platform platform-twitter">
+          <div class="platform platform--twitter">
             <div class="platform__app">
-                <i class="platform__icon"></i><span class="platform__name">@nathanf</span>
+                <img class="platform__icon" src="./images/icon-twitter.svg"><span class="platform__name">@nathanf</span>
             </div>
-            <div class="platform__totlalfollowers"><span class="number">1044</span> Followers</div>
-            <div class="platform__todayfollowers">99 Today</div>
+            <div class="platform__totlalfollowers"><div class="number">1044</div><div class="text-followers">Followers</div></div>
+            <div class="platform__todayfollowers text-up"><img class="up" src="./images/icon-up.svg">99 Today</div>
           </div>
-          <div class="platform platform-instagram">
+          <div class="platform platform--instagram">
             <div class="platform__app">
-                <i class="platform__icon"></i><span class="platform__name">@realnathanf</span>
+                <img class="platform__icon" src="./images/icon-instagram.svg"></img><span class="platform__name">@realnathanf</span>
             </div>
-            <div class="platform__totlalfollowers"><span class="number">11k</span> Followers</div>
-            <div class="platform__todayfollowers">1099 Today</div>
+            <div class="platform__totlalfollowers"><div class="number">11k</div><div class="text-followers">Followers</div></div>
+            <div class="platform__todayfollowers text-up"><img class="up" src="./images/icon-up.svg">1099 Today</div>
           </div>
-          <div class="platform platform-youtube">
+          <div class="platform platform--youtube">
             <div class="platform__app">
-                <i class="platform__icon"></i><span class="platform__name">Nathan F.</span>
+                <img class="platform__icon" src="./images/icon-youtube.svg"><span class="platform__name">Nathan F.</span>
             </div>
-            <div class="platform__totlalfollowers"><span class="number">8239</span> Subscribers</div>
-            <div class="platform__todayfollowers">144 Today</div>
+            <div class="platform__totlalfollowers"><div class="number">8239</div><div class="text-followers">Subscribers</div></div>
+            <div class="platform__todayfollowers text-down"><img class="down" src="./images/icon-down.svg">144 Today</div>
           </div>
         </div>
       </section>
@@ -66,11 +70,11 @@
             <table>
               <tr>
                 <td><span class="action__name">Page Views</span></td>
-                <td><i></i></td>
+                <td><img class="platform__icon" src="./images/icon-facebook.svg"></td>
               </tr>
               <tr>
-                <td><span class="action__number">87</span></td>
-                <td><span class="action__percent action__percent--up">3%</span></td>
+                <td><span class="action__number"><img class="up" src="./images/icon-up.svg">87</span></td>
+                <td><span class="action__percent text-up"><img class="up" src="./images/icon-up.svg">3%</span></td>
               </tr>
             </table>
           </div>
@@ -78,11 +82,11 @@
             <table>
               <tr>
                 <td><span class="action__name">Likes</span></td>
-                <td><i></i></td>
+                <td><img class="platform__icon" src="./images/icon-facebook.svg"></td>
               </tr>
               <tr>
                 <td><span class="action__number">52</span></td>
-                <td><span class="action__percent action__percent--down">2%</span></td>
+                <td><span class="action__percent text-down"><img class="down" src="./images/icon-down.svg">2%</span></td>
               </tr>
             </table>
           </div>
@@ -90,11 +94,11 @@
             <table>
               <tr>
                 <td><span class="action__name">likes</span></td>
-                <td><i></i></td>
+                <td><img class="platform__icon" src="./images/icon-instagram.svg"></td>
               </tr>
               <tr>
                 <td><span class="action__number">5462</span></td>
-                <td><span class="action__percent action__percent--up">2257%</span></td>
+                <td><span class="action__percent text-up"><img class="up" src="./images/icon-up.svg">2257%</span></td>
               </tr>
             </table>
           </div>
@@ -102,11 +106,11 @@
             <table>
               <tr>
                 <td><span class="action__name">Profile Views</span></td>
-                <td><i></i></td>
+                <td><img class="platform__icon" src="./images/icon-instagram.svg"></td>
               </tr>
               <tr>
                 <td><span class="action__number">52k</span></td>
-                <td><span class="action__percent action__percent--up">1375%</span></td>
+                <td><span class="action__percent text-up"><img class="up" src="./images/icon-up.svg">1375%</span></td>
               </tr>
             </table>
           </div>
@@ -114,11 +118,11 @@
             <table>
               <tr>
                 <td><span class="action__name">Retweets</span></td>
-                <td><i></i></td>
+                <td><img class="platform__icon" src="./images/icon-twitter.svg"></td>
               </tr>
               <tr>
                 <td><span class="action__number">117</span></td>
-                <td><span class="action__percent action__percent--up">303%</span></td>
+                <td><span class="action__percent text-up"><img class="up" src="./images/icon-up.svg">303%</span></td>
               </tr>
             </table>
           </div>
@@ -126,11 +130,11 @@
             <table>
               <tr>
                 <td><span class="action__name">Likes</span></td>
-                <td><i></i></td>
+                <td><img class="platform__icon" src="./images/icon-twitter.svg"></td>
               </tr>
               <tr>
                 <td><span class="action__number">507</span></td>
-                <td><span class="action__percent action__percent--up">553%</span></td>
+                <td><span class="action__percent text-up"><img class="up" src="./images/icon-up.svg">553%</span></td>
               </tr>
             </table>
           </div>
@@ -138,11 +142,11 @@
             <table>
               <tr>
                 <td><span class="action__name">Likes</span></td>
-                <td><i></i></td>
+                <td><img class="platform__icon" src="./images/icon-youtube.svg"></td>
               </tr>
               <tr>
                 <td><span class="action__number">107</span></td>
-                <td><span class="action__percent action__percent--down">19%</span></td>
+                <td><span class="action__percent text-down"><img class="down" src="./images/icon-down.svg">19%</span></td>
               </tr>
             </table>
           </div>
@@ -150,23 +154,24 @@
             <table>
               <tr>
                 <td><span class="action__name"> Total Views</span></td>
-                <td><i></i></td>
+                <td><img class="platform__icon" src="./images/icon-youtube.svg"></td>
               </tr>
               <tr>
                 <td><span class="action__number">1407</span></td>
-                <td><span class="action__percent action__percent--down">12%</span></td>
+                <td><span class="action__percent text-down"><img class="down" src="./images/icon-down.svg">12%</span></td>
               </tr>
             </table>
           </div>
         </div>
       </section>
     </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/abderrahim-soumer/">Abderrahim soumer</a>.
+    </div>
   </main>
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.linkedin.com/in/abderrahim-soumer/">Abderrahim soumer</a>.
-  </div>
+  
 </body>
 </html>
