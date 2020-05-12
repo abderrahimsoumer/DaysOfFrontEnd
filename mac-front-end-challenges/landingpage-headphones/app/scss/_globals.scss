@@ -1,0 +1,173 @@
+/* Globals */
+html{
+    font-size: 100%;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section{
+   padding-right: 10px;
+   padding-left: 10px;
+}
+section:not(.hasBg){
+    max-width: $sectionWidth;
+    margin: 0 auto;
+}
+section.hasBg{
+    background-color: $color-secondary;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
+p{
+    color: $graydark;
+    line-height: 1.6em;
+}
+p.small{
+    font-size: 0.8em;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    float: left;
+}
+
+ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    color: $graydark;
+}
+ul li.active a{
+    background-color: $color-primary;
+    color: $white;
+}
+.logo{
+    float: left;
+    margin-left: 1em;
+}
+.logo img{
+    width:8em;
+}
+.menu{
+    float: right;
+    margin-right: 6em;
+}
+.shop-cart{
+    position: relative;
+}
+span.budget {
+    background: #b2dd4c;
+    color: #FFF;
+    font-size: 0.8em;
+    font-weight: 700;
+    width: 1.1em;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    top: 0;
+    right: 0.5em;
+    position: absolute;
+}
+.clearbox{
+    clear: both;
+}
+.mr{
+    margin-right: 0.8em;
+}
+.mt180{
+    margin-top: 180px !important;
+}
+section#intro{
+       min-height: 500px;
+       min-height: 35vw;
+       padding: 11%;
+       padding-bottom: 130px;
+       background-size: cover;
+       background-position: top right;
+       background-image: url(../../images/background.jpg);   
+}
+.introduction {
+    max-width: 19em;
+}
+section#features {
+    text-align: center;
+    header{
+        padding-bottom: 48px;
+    }
+}
+section#offer{
+    padding-top: 120px;
+    .offer{
+        max-width: $sectionWidth;
+        margin: 0 auto;
+        
+    }
+    .col{
+        margin-bottom: 0;
+    }
+}
+section#products{
+    padding-bottom: 100px;
+}
+section#products header{
+    text-align: center;
+    padding-bottom: 40px;
+}
+section#message{
+    .message{
+        max-width: $sectionWidth;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        p{
+            float: left;
+        }
+        a{
+            float: right;
+        }
+    }
+}
+
+footer{
+    background-color: #303030;
+    padding: 2em;
+    color: $graydark;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8em;
+    a{
+        text-decoration: none;
+        color: $graylight;
+    }
+}
+svg {
+    display: block;
+    width: 100%;
+    height: 120px;
+    
+}
+svg.top{
+    transform: translateY(-120px);
+}
+svg.bottom{
+    transform: translateY(120px);
+}
+polygon {
+    fill: #fff;
+}
+
+@media (max-width:500px){
+    .offer-img img{
+        max-width: 100%;
+    }
+}

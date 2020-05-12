@@ -1,0 +1,71 @@
+
+.card{
+    .icon{
+        background-color: $color-primary;
+        background: $green-gradient;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        margin: 0 auto;
+        color: $white;
+    }
+    img{
+        width: 100%;
+    }
+    
+    .card-body{
+        position: relative;
+
+        h4{
+            width: 50%;
+            margin: 0;
+        }
+        p{
+            font-size: 0.9em;
+        }
+        .stars{
+            display: inline;
+            position: absolute;
+            top: 1.5em;
+            right: 1em;
+            font-size: 0.8em;
+            color: $color-primary;
+        }
+    }
+    .price{
+        color: $graylight;
+        font-weight: 500;
+    }
+    
+
+}
+
+.cards-products{
+    .card-head {
+        background: #f6f6f6;
+        border: 1px solid $graylight;
+    }
+    .card-body{
+        padding: 1em;
+        border: 1px solid $graylight;
+        min-height: 3.3em;
+    }
+    .card-footer{
+        border: 1px solid $graylight;
+    }
+    .card-footer .btn {
+        padding: 1em 0;
+        width: 49%;
+        border-width: 0;
+        text-align: center;
+        border-radius: 0;
+    }
+    .card-footer .btn:first-child{
+        border-right: 1px solid $graylight;
+    }
+}
+

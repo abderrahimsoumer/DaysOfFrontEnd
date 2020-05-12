@@ -1,0 +1,42 @@
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+.btn-outline{
+    color: $graydark;
+    border: 2px solid $graylight;
+}
+.btn-primary{
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    color: $white;
+}
+
+.btn-app-download{
+    width: 100px;
+    height: 30px;
+    
+}
+
+.app-store{
+    background-image: url('../../images/app-store.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    &:hover{
+        background-image: url('../../images/app-store-green.png');
+
+    }
+}
+.google-play{
+    background-image: url('../../images/play-store.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    &:hover{
+        background-image: url('../../images/play-store-green.png');
+    }
+}

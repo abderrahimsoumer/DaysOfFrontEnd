@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Headphones | Landing Page</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dist/css/styles.css">
 </head>
 <body>
     <header>
@@ -19,31 +19,34 @@
                 <li><a href="#">Reviews</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i><span class="budget">0</span></a></li>
-                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                <li class="shop-cart"><a href="#"><span class="fa fa-shopping-cart"></span><span class="budget">0</span></a></li>
+                <li><a href="#"><span class="fa fa-search"></span></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="intro">
+        <section id="intro" class="hasBg">
             <div class="introduction">
-                <h1>Feel Powerful Experience</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vero.</p>
-                <a href="#" class="btn btn-primary">Check it out</a>
+                <h1>Feel Powerfull Experience</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, sapiente officiis.</p>
+                <a href="#" class="btn btn-primary mr">Check it out</a>
                 <a href="#" class="btn btn-outline">Buy</a>
             </div>
-            <img src="./images/White-edition-headphones.jpg" alt="White edition headphones">
+            <!--img src="./images/White-edition-headphones.jpg" alt="White edition headphones"-->
         </section>
+        <svg class="top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+            <polygon points="0 0 100 10 0 10" />
+        </svg>
         <section id="features">
             <header>
                 <h2>Features and Specifications</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, totam unde!</p>
             </header>
-            <div class="features-cards">
-                <div class="card feature">
+            <div class="cards cards-features section group">
+                <div class="card col span_1_of_4 feature">
                     <div class="card-header">
                         <div class="icon">
-                            <i class="fas fa-desktop"></i>
+                            <span class="fas fa-desktop"></span>
                         </div>
                     </div>
                     <div class="card-body">
@@ -54,10 +57,10 @@
                         <a href="#" class="btn btn-outline">Buy now</a>
                     </div>
                 </div>
-                <div class="card feature">
+                <div class="card col span_1_of_4 feature">
                     <div class="card-header">
                         <div class="icon">
-                            <i class="fas fa-cloud-download-alt"></i>
+                            <span class="fas fa-cloud-download-alt"></span>
                         </div>
                     </div>
                     <div class="card-body">
@@ -68,10 +71,10 @@
                         <a href="#" class="btn btn-outline">Buy now</a>
                     </div>
                 </div>
-                <div class="card feature">
+                <div class="card col span_1_of_4 feature">
                     <div class="card-header">
                         <div class="icon">
-                            <i class="fas fa-wrench"></i>
+                            <span class="fas fa-wrench"></span>
                         </div>
                     </div>
                     <div class="card-body">
@@ -82,10 +85,10 @@
                         <a href="#" class="btn btn-outline">Buy now</a>
                     </div>
                 </div>
-                <div class="card feature">
+                <div class="card col span_1_of_4 feature">
                     <div class="card-header">
                         <div class="icon">
-                            <i class="fas fa-rocket"></i>
+                            <span class="fas fa-rocket"></span>
                         </div>
                     </div>
                     <div class="card-body">
@@ -98,37 +101,47 @@
                 </div>
             </div>
         </section>
-        <section id="offer">
-            <div class="offer">
-                <header>
-                    <h2>Exclusive offers using our app.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eligendi quam, corrupti laborum neque tempore adipisci.</p>
-                </header>
-                <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati expedita dolore quaerat aspernatur doloremque sit, ab architecto, sunt nemo nihil ipsa corrupti! Facere, aperiam architecto. A, magni sit. Sunt ipsa amet maxime, possimus laborum ea corporis provident neque commodi expedita dolorem repellat quo placeat? Incidunt unde iusto maxime perspiciatis harum!</p>
-                <a href="#" class="btn btn-app-download app-store"></a>
-                <a href="#" class="btn btn-app-download google-play"></a>
+        <svg class="bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+            <polygon points="0 0 100 0 0 10" />
+        </svg>
+        <section id="offer" class="hasBg">
+            <div class="offer section group ">
+                <div class="col mt180">
+                    <header>
+                        <h2>Exclusive offers using our app.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus commodi quos in quisquam repellendus ipsum nesciunt tempore assumenda iste.</p>
+                    </header>
+                    <p class="small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti est laudantium iste explicabo quidem dolore mollitia rem corporis perspiciatis. Labore fugit nulla illo dolore officia in recusandae iusto hic. Saepe excepturi quos ratione expedita autem! Consequuntur vitae dolorum veritatis ratione saepe? Ad deleniti qui corrupti aperiam debitis blanditiis nostrum aliquam hic, vitae nobis soluta quam?</p>
+                    <a href="#" class="btn btn-app-download app-store mr"></a>
+                    <a href="#" class="btn btn-app-download google-play"></a>
+                </div>
+                <div class="col offer-img">
+                    <img src="./images/mobile-app.jpg" alt="mobile application">
+                </div>
             </div>
-            <img src="./images/mobile-app.jpg" alt="mobile application">
         </section>
+        <svg class="top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+            <polygon points="0 10 100 0 100 10  " />
+        </svg>
         <section id="products">
             <header>
                 <h2>Related Products</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque.</p>
             </header>
-            <div class="products-card">
-                <div class="card product">
+            <div class="cards cards-products section group">
+                <div class="card col span_1_of_4 product">
                     <div class="card-head">
                         <img src="./images/White-edition-headphones.jpg" alt="limited Edition Headphones">
                     </div>
                     <div class="card-body">
-                        <h5>limited Edition Headphones</h5>
+                        <h4>limited Edition Headphones</h4>
                         <span class="price">$275.00</span>
-                        <div class="starts">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="far fa-star"></i>
+                        <div class="stars">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="far fa-star"></span>
                         </div>
                     </div>
                     <div class="card-footer">
@@ -136,12 +149,12 @@
                         <a href="#" class="btn btn-outline">Add to cart</a>
                     </div>
                 </div>
-                <div class="card product">
+                <div class="card col span_1_of_4 product">
                     <div class="card-head">
                         <img src="./images/Sounds-as-powerful.jpg" alt="Sounds as powerful">
                     </div>
                     <div class="card-body">
-                        <h5>Sounds as Powerful</h5>
+                        <h4>Sounds as Powerful</h4>
                         <span class="price">$320.00</span>
                     </div>
                     <div class="card-footer">
@@ -149,19 +162,19 @@
                         <a href="#" class="btn btn-outline">Add to cart</a>
                     </div>
                 </div>
-                <div class="card product">
+                <div class="card col span_1_of_4 product">
                     <div class="card-head">
                         <img src="./images/Wireless-tv-headphones.jpg" alt="Wireless Tv Headphones">
                     </div>
                     <div class="card-body">
-                        <h5>Wireless Tv Headphones</h5>
+                        <h4>Wireless Tv Headphones</h4>
                         <span class="price">$230.00</span>
-                        <div class="starts">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="far fa-star"></i>
+                        <div class="stars">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="far fa-star"></span>
                         </div>
                     </div>
                     <div class="card-footer">
@@ -169,19 +182,19 @@
                         <a href="#" class="btn btn-outline">Add to cart</a>
                     </div>
                 </div>
-                <div class="card product">
+                <div class="card col span_1_of_4 product">
                     <div class="card-head">
                         <img src="./images/Extra-bass-headphones.jpg" alt="Extra Bass Headphones">
                     </div>
                     <div class="card-body">
-                        <h5>Extra Bass Headphones</h5>
+                        <h4>Extra Bass Headphones</h4>
                         <span class="price">$280.00</span>
-                        <div class="starts">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="far fa-star"></i>
+                        <div class="stars">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="far fa-star"></span>
                         </div>
                     </div>
                     <div class="card-footer">
@@ -191,14 +204,16 @@
                 </div>
             </div>
         </section>
-        <section id="message">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eaque.
-                <a href="#" class="btn btn-primary"></a>
-            </p>
+        <section id="message" class="hasBg">
+            <div class="message">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eaque.</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+                <div class="clearbox"></div>
+            </div>
         </section>
     </main>
     <footer>
-        <p class="smal center">Copyright &copy; 2020, Developed by <a href="linkedin.com/in/abderrahim-soumer/">Abderrahim SOUMER</a></p>
+        <p class="smal center">Copyright &copy; BuyIT 2020, Developed by <a href="https://linkedin.com/in/abderrahim-soumer/">Abderrahim SOUMER</a></p>
     </footer>
 </body>
 </html>
