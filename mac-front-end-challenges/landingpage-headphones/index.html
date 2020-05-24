@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Headphones | Landing Page</title>
-
+    <link
+    rel="stylesheet"
+    href="./dist/css/animate.css"
+  />
     <link rel="stylesheet" href="./dist/css/styles.css">
+    
 </head>
 <body>
     <header>
@@ -25,7 +29,7 @@
         </nav>
     </header>
     <main>
-        <section id="intro" class="hasBg">
+        <section id="intro" class="hasBg wow fadeInLeft">
             <div class="introduction">
                 <h1>Feel Powerfull Experience</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, sapiente officiis.</p>
@@ -37,12 +41,12 @@
         <svg class="top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
             <polygon points="0 0 100 10 0 10" />
         </svg>
-        <section id="features">
+        <section id="features" class="wow bounceInLeft">
             <header>
                 <h2>Features and Specifications</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, totam unde!</p>
             </header>
-            <div class="cards cards-features section group">
+            <div class="cards cards-features section group ">
                 <div class="card col span_1_of_4 feature">
                     <div class="card-header">
                         <div class="icon">
@@ -101,11 +105,11 @@
                 </div>
             </div>
         </section>
-        <svg class="bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+        <svg class="bottom " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
             <polygon points="0 0 100 0 0 10" />
         </svg>
         <section id="offer" class="hasBg">
-            <div class="offer section group ">
+            <div class="offer section group wow bounceInRight">
                 <div class="col mt180">
                     <header>
                         <h2>Exclusive offers using our app.</h2>
@@ -123,9 +127,9 @@
         <svg class="top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
             <polygon points="0 10 100 0 100 10  " />
         </svg>
-        <section id="products">
+        <section id="products" class="wow bounceInLeft">
             <header>
-                <h2>Related Products</h2>
+                <h2  class="wow bounceInLeft">Related Products</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque.</p>
             </header>
             <div class="cards cards-products section group">
@@ -204,7 +208,7 @@
                 </div>
             </div>
         </section>
-        <section id="message" class="hasBg">
+        <section id="message" class="hasBg wow bounceInRight">
             <div class="message">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eaque.</p>
                 <a href="#" class="btn btn-primary">Add to cart</a>
@@ -215,5 +219,16 @@
     <footer>
         <p class="smal center">Copyright &copy; BuyIT 2020, Developed by <a href="https://linkedin.com/in/abderrahim-soumer/">Abderrahim SOUMER</a></p>
     </footer>
+
+    <script src="./dist/js/wow.min.js"></script>
+    <script>
+        new WOW({
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }).init();
+    </script>
 </body>
 </html>
