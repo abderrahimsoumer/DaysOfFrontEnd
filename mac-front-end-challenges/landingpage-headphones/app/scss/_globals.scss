@@ -46,6 +46,11 @@ ul li a{
     padding: 0.4em 1em;
     border-radius: 5px;
     color: $graydark;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        //background-color: $color-primary;
+        color: $color-primary;
+    }
 }
 ul li.active a{
     background-color: $color-primary;
@@ -75,7 +80,7 @@ span.budget {
     text-align: center;
     border-radius: 3px;
     top: 0;
-    right: 0.5em;
+    left: 2.2em;
     position: absolute;
 }
 .clearbox{

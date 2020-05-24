@@ -44,9 +44,28 @@
 
 }
 
+.cards-features{
+    .card{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 50px;
+        transition: all 0.5 ease-in-out;
+        &:hover{
+            background: $color-secondary;
+            background: linear-gradient(to top, #F5F5F5 0%, #ffffff 70%);
+        }
+    }
+    
+}
 .cards-products{
+    .card{
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            background-color: $color-secondary;
+        }
+    }
     .card-head {
-        background: #f6f6f6;
+        background: $color-secondary;
         border: 1px solid $graylight;
     }
     .card-body{
